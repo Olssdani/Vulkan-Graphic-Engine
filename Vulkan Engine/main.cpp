@@ -25,7 +25,7 @@ private:
 	void initWindow() {
 		//Initialize glfw for window context
 		glfwInit();
-		
+
 		//Disable for openGL
 		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
@@ -35,7 +35,7 @@ private:
 
 	}
 	//Check that all required extensions is avaible
-	VkResult checkExtensions(){
+	VkResult checkExtensions() {
 		//Get avaible extensions
 		uint32_t extensionCount = 0;
 		vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
@@ -44,14 +44,14 @@ private:
 		//Get required extensions
 		uint32_t requiredExtensionCount = 0;
 		const char **glfwExtensions;
-		glfwExtensions = glfwGetRequiredInstanceExtensions(&requiredExtensionCount);		
+		glfwExtensions = glfwGetRequiredInstanceExtensions(&requiredExtensionCount);
 		std::vector<const char*> requiredExtensions(glfwExtensions, glfwExtensions + requiredExtensionCount);
 
 		//Check required against avaible
 		int counter = 0;
 		for (const auto& requiredExtension : requiredExtensions) {
 			for (const auto& avaibleExtension : extensions) {
-				if (!strcmp(avaibleExtension.extensionName,requiredExtension)) {
+				if (!strcmp(avaibleExtension.extensionName, requiredExtension)) {
 					counter++;
 				}
 			}
@@ -77,6 +77,7 @@ private:
 		VkInstanceCreateInfo createInfo = {};
 		createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
 		createInfo.pApplicationInfo = &appInfo;
+		createInfo.pNext = NULL;
 
 		//Check extensions	
 		if (checkExtensions() != VK_SUCCESS) {
@@ -95,11 +96,11 @@ private:
 		createInfo.enabledLayerCount = 0;
 
 		//Create the instance
-		if (vkCreateInstance(&createInfo, nullptr, &instance) != VK_SUCCESS) {
+		if (vkCreateInstance(&createInfo, NULL, &instance) != VK_SUCCESS) {
 			throw std::runtime_error("failed to create instance!");
 		}
 
-		
+
 	}
 
 	void initVulkan() {

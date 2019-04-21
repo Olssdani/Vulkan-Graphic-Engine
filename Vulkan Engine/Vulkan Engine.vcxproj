@@ -29,28 +29,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -89,13 +89,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glm;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.106.0\Lib;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\lib-vc2017;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -106,13 +106,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glm;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.106.0\Lib;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\lib-vc2017;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -125,7 +125,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glm;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -133,7 +133,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.106.0\Lib;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\lib-vc2017;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -146,7 +146,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.1.106.0\Include;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glm;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\include;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -154,7 +154,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\VulkanSDK\1.1.106.0\Lib;C:\Users\Daniel olsson\Documents\Visual Studio 2017\Include\glfw-3.3.bin.WIN64\lib-vc2017;C:\Users\nille\Documents\Visual Studio 2017\Libraries\glfw-3.3.bin.WIN64\lib-vc2017;C:\VulkanSDK\1.1.106.0\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>vulkan-1.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
